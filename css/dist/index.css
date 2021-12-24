@@ -85,4 +85,50 @@ Media Queries
     max-width: 50ch;
   }
 }
+
+/* Buttons */
+.btn {
+  padding: 1rem 2rem;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: #4452fe;
+}
+
+@media (hover: hover) {
+  .btn--primary:hover {
+    cursor: pointer;
+    background-color: #7781fe;
+  }
+}
+
+.btn--primary:active {
+  background-color: #7781fe;
+}
+
+.btn--outline {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid currentColor;
+}
+
+@media (hover: hover) {
+  .btn--outline:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+.btn--outline:active {
+  color: #000;
+  background-color: #fff;
+}
 /*# sourceMappingURL=index.css.map */
