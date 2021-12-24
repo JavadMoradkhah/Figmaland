@@ -1,1 +1,38 @@
 @import "layout";
+
+/* 
+Media Queries
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+}
+*/
+
+/* Blocks */
+.block {
+  width: 100%;
+  padding: 2rem;
+  border: 1px solid black;
+
+  &__title,
+  &__description {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  &__description {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+
+    @media screen and (min-width: 768px) {
+      max-width: 50ch;
+    }
+  }
+}
