@@ -41,6 +41,11 @@ h4 {
   font-size: 1.6rem;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 a,
 button,
 input,
