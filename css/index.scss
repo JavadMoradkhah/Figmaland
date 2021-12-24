@@ -80,3 +80,44 @@ Media Queries
     }
   }
 }
+
+/* Grid */
+.grid {
+  display: grid;
+
+  &--c2 {
+    grid-template-columns: 100%;
+    row-gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 0 1rem;
+    }
+  }
+
+  &--c4 {
+    grid-template-columns: 100%;
+    row-gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 0 1rem;
+    }
+  }
+
+  &--c2-r2 {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+}

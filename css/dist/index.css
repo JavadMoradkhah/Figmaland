@@ -136,4 +136,62 @@ Media Queries
   color: #000;
   background-color: #fff;
 }
+
+/* Grid */
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid--c2 {
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  row-gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--c2 {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 0 1rem;
+  }
+}
+
+.grid--c4 {
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  row-gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--c4 {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--c4 {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 1rem;
+  }
+}
+
+.grid--c2-r2 {
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  row-gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--c2-r2 {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
 /*# sourceMappingURL=index.css.map */
