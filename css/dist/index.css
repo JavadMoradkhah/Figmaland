@@ -194,4 +194,25 @@ Media Queries
     gap: 1rem;
   }
 }
+
+/* Lists */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.list--inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list__item {
+  padding: 5px 10px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 /*# sourceMappingURL=index.css.map */

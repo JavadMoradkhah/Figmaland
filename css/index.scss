@@ -121,3 +121,20 @@ Media Queries
     }
   }
 }
+
+/* Lists */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  &--inline {
+    display: flex;
+  }
+
+  &__item {
+    padding: 5px 10px;
+    display: block;
+    width: fit-content;
+  }
+}
