@@ -133,8 +133,135 @@ Media Queries
   }
 
   &__item {
-    padding: 5px 10px;
     display: block;
     width: fit-content;
+  }
+}
+
+body {
+  height: 300vh;
+}
+
+/* Header */
+.app-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $color-header-background;
+
+  &__content {
+    width: 100%;
+    padding: 1rem 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media screen and (min-width: 1024px) {
+      padding: 2rem 4rem;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo-img {
+    width: 16rem;
+    display: block;
+  }
+
+  .nav {
+    width: 100%;
+    max-height: 0;
+    position: absolute;
+    top: 100%;
+    padding: 0 2rem;
+    background-color: $color-background;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+
+    &.expanded {
+      max-height: 100vh;
+    }
+
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      width: 100%;
+      border-bottom: 1px solid $color-nav-border;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      a {
+        display: inline-block;
+        padding: 1.6rem 0.5rem;
+        transition: color 0.5s;
+
+        &:hover {
+          cursor: pointer;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .nav-toggler {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  .login-btn {
+    margin: 0 2rem 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    .nav-toggler {
+      display: none;
+    }
+
+    .login-btn {
+      margin-left: unset;
+    }
+
+    .nav {
+      width: fit-content;
+      max-height: inherit;
+      position: static;
+      top: unset;
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+      transition: unset;
+
+      &__list {
+        display: flex;
+        align-items: center;
+      }
+
+      &__item {
+        margin: 0 1rem;
+        border-bottom: none;
+
+        a {
+          padding: 1rem;
+          transition: color 0.4s;
+
+          &:hover {
+            cursor: pointer;
+            color: $color-primary;
+          }
+        }
+      }
+    }
   }
 }
