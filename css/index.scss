@@ -29,10 +29,7 @@ Media Queries
     font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.5;
-
-    @media screen and (min-width: 768px) {
-      max-width: 50ch;
-    }
+    max-width: 50ch;
   }
 }
 
@@ -44,6 +41,11 @@ Media Queries
   outline: 0;
   background-color: transparent;
   transition: background-color 0.3s;
+
+  @media screen and (max-width: 300px) {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+  }
 
   &--primary {
     color: #fff;
@@ -122,6 +124,26 @@ Media Queries
   }
 }
 
+/* Row & Column */
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row--jcc,
+.column--jcc {
+  justify-content: center;
+}
+
+.row--aic,
+.column--aic {
+  align-items: center;
+}
+
 /* Lists */
 .list {
   padding: 0;
@@ -145,17 +167,24 @@ Media Queries
   top: 0;
   left: 0;
   background-color: $color-header-background;
+  z-index: $z-index-header;
 
   &__content {
     width: 100%;
+    max-width: 1440px;
     padding: 1rem 2rem;
     position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
+      padding: 1rem 4rem;
+    }
+
+    @media screen and (min-width: 1440px) {
       padding: 2rem 4rem;
+      margin: 0 auto;
     }
   }
 
@@ -166,8 +195,12 @@ Media Queries
   }
 
   &__logo-img {
-    width: 16rem;
+    width: 30vw;
     display: block;
+
+    @media screen and (min-width: 768px) {
+      width: 16rem;
+    }
   }
 
   .nav {
@@ -257,6 +290,60 @@ Media Queries
             color: $color-primary;
           }
         }
+      }
+    }
+  }
+}
+
+/* Hero Block */
+.hero-block {
+  padding: 12rem 2rem 2rem 2rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 16rem 0 4rem 0;
+    height: auto;
+  }
+
+  .block__title {
+    max-width: 15ch;
+  }
+
+  .block__description {
+    margin: 4rem auto;
+  }
+
+  .btns-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  .btn:first-of-type {
+    margin: 0;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      margin-right: 2rem;
+    }
+  }
+
+  &__image-container {
+    width: 100%;
+    margin-top: 4rem;
+
+    img {
+      width: 100%;
+      max-width: 1024px;
+      display: block;
+
+      @media screen and (min-width: 1024px) {
+        margin: 0 auto;
       }
     }
   }
