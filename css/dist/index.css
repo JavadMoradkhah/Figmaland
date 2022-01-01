@@ -215,10 +215,6 @@ Media Queries
   width: fit-content;
 }
 
-body {
-  height: 300vh;
-}
-
 /* Header */
 .app-header {
   width: 100%;
@@ -298,7 +294,7 @@ body {
 }
 
 .app-header .nav__item a {
-  display: inline-block;
+  display: block;
   padding: 1.6rem 0.5rem;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;

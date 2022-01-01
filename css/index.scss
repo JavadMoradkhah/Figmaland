@@ -138,10 +138,6 @@ Media Queries
   }
 }
 
-body {
-  height: 300vh;
-}
-
 /* Header */
 .app-header {
   width: 100%;
@@ -202,7 +198,7 @@ body {
       }
 
       a {
-        display: inline-block;
+        display: block;
         padding: 1.6rem 0.5rem;
         transition: color 0.5s;
 
