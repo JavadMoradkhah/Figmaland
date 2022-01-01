@@ -480,4 +480,52 @@ Media Queries
     margin: 0 auto;
   }
 }
+
+/* Features Block */
+.features-block {
+  padding: 4rem;
+}
+
+.features-block__image {
+  width: 100%;
+  display: block;
+}
+
+.features-block .grid--c2 {
+  max-width: 992px;
+  margin: 3rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .features-block .grid--c2 {
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+  }
+}
+
+.features-block .media-item {
+  margin: 6rem 0;
+}
+
+.features-block .media-item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.features-block .media-item__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+}
+
+.features-block .media-item__title {
+  font-weight: 400;
+}
+
+.features-block .media-item__description {
+  color: rgba(255, 255, 255, 0.6);
+}
 /*# sourceMappingURL=index.css.map */
