@@ -610,3 +610,46 @@ Media Queries
     line-height: 1.5;
   }
 }
+
+/* CTA Block */
+.cta-block {
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 4rem;
+  }
+
+  .grid {
+    margin: 2rem auto;
+    overflow: hidden;
+    background-color: #1e1e1e;
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      border-radius: 1.6rem;
+      background-color: #343434;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .block__title {
+    font-size: 3rem;
+    max-width: 16ch;
+    line-height: 1.5;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+  }
+}

@@ -809,4 +809,62 @@ Media Queries
   color: #cacaca;
   line-height: 1.5;
 }
+
+/* CTA Block */
+.cta-block {
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .cta-block {
+    padding: 4rem;
+  }
+}
+
+.cta-block .grid {
+  margin: 2rem auto;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+
+@media screen and (min-width: 768px) {
+  .cta-block .grid {
+    max-width: 768px;
+    border-radius: 1.6rem;
+    background-color: #343434;
+  }
+}
+
+.cta-block__image {
+  width: 100%;
+}
+
+.cta-block__content {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta-block .block__title {
+  font-size: 3rem;
+  max-width: 16ch;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .cta-block .block__title {
+    text-align: start;
+  }
+}
 /*# sourceMappingURL=index.css.map */
