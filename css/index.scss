@@ -389,6 +389,8 @@ Media Queries
   }
 
   .btns-container {
+    width: fit-content;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

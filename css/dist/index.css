@@ -525,6 +525,10 @@ Media Queries
 }
 
 .hero-block .btns-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
