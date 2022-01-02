@@ -68,6 +68,12 @@ Media Queries
   padding: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .block {
+    padding: 4rem;
+  }
+}
+
 .block__title, .block__description {
   text-align: center;
   margin: 0 auto;
@@ -84,6 +90,14 @@ Media Queries
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
   max-width: 50ch;
+}
+
+.block .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 2rem auto;
 }
 
 /* Buttons */
@@ -203,6 +217,10 @@ Media Queries
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .column {
@@ -213,6 +231,11 @@ Media Queries
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.row--wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .row--jcc,
@@ -587,6 +610,69 @@ Media Queries
     margin: 3rem auto;
     padding: 0;
     gap: 0 4rem;
+  }
+}
+
+/* Gallery Block */
+.gallery-block__list {
+  display: block;
+  margin: 2rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-block__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 768px;
+  }
+}
+
+.gallery-block__list img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-block__list img {
+    min-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.gallery-block .list__item {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  /* To Fix Aspect Ratio Of Images At Last Line */
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-block .list__item {
+    width: initial;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    height: 220px;
+    margin: 0.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
+
+.gallery-block .list__item:last-of-type {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  /* To Fix Bottom White Space Between List And Button */
+}
+
+@media screen and (min-width: 768px) and (max-width: 772px) {
+  .gallery-block .list__item:last-of-type {
+    height: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */
