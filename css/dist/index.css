@@ -733,4 +733,80 @@ Media Queries
 .partners-block__list img {
   width: 100%;
 }
+
+/* Testimonials Block */
+.testimonials-block__list {
+  max-width: 768px;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+.testimonial {
+  padding: 2rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+}
+
+.testimonial__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.testimonial__user-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+}
+
+.testimonial__user-img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 100%;
+}
+
+.testimonial__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.testimonial__user-name {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.testimonial__user-job {
+  color: #bdbdbd;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.testimonial__body {
+  margin-top: 1rem;
+}
+
+.testimonial__text {
+  color: #cacaca;
+  line-height: 1.5;
+}
 /*# sourceMappingURL=index.css.map */

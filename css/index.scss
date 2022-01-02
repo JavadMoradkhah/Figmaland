@@ -549,3 +549,64 @@ Media Queries
     }
   }
 }
+
+/* Testimonials Block */
+.testimonials-block {
+  &__list {
+    max-width: 768px;
+    margin: 2rem auto;
+    gap: 2rem;
+  }
+}
+
+.testimonial {
+  padding: 2rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+
+  &__header {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__user-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  &__user-img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 100%;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__user-name {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  &__user-job {
+    color: #bdbdbd;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  &__body {
+    margin-top: 1rem;
+  }
+
+  &__text {
+    color: #cacaca;
+    line-height: 1.5;
+  }
+}
