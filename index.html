@@ -15,6 +15,357 @@
 </head>
 
 <body>
+
+    <!-- Header -->
+    <header id="app-header" class="app-header">
+        <div class="app-header__content">
+            <a class="app-header__logo" href="/">
+                <img class="app-header__logo-img" src="assets/logo/logo.svg" alt="">
+            </a>
+            <nav id="navigation-menu" class="nav">
+                <ul class="list list--inline nav__list">
+                    <li class="list__item nav__item"><a href="#Home">Home</a></li>
+                    <li class="list__item nav__item"><a href="#Product">Product</a></li>
+                    <li class="list__item nav__item"><a href="#About">About</a></li>
+                    <li class="list__item nav__item"><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn--outline login-btn">Login</a>
+            <img id="nav-toggler" class="nav-toggler" src="assets/icon/menu.svg" alt="">
+        </div>
+    </header>
+
+    <!-- Hero Block -->
+    <section class="block hero-block">
+        <h1 class="block__title">Work at the speed of thought</h1>
+        <p class="block__description">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+        </p>
+        <div class="btns-container">
+            <a href="#" class="btn btn--primary">Try For Free</a>
+            <a href="#" class="btn btn--outline">Learn More</a>
+        </div>
+        <div class="hero-block__image-container">
+            <picture>
+                <source type="image/png" srcset="/assets/images/screens_388w.png 388w,
+                /assets/images/screens_776w.png 776w, /assets/images/screens_1552w.png 1552w">
+                <img src="/assets/images/screens_776w.png" alt="">
+            </picture>
+        </div>
+    </section>
+
+    <!-- Features Block -->
+    <section class="block features-block">
+        <h2 class="block__title">FEATURES</h2>
+        <p class="block__description">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+        </p>
+        <div class="grid grid--c2">
+            <img class="features-block__image" src="/assets/images/features_631w.png"
+                srcset="/assets/images/features_315w.png 315w, /assets/images/features_631w.png 631w" alt="">
+            <div class="column">
+                <ul class="list media-list">
+                    <li class="media-item">
+                        <div class="media-item__header">
+                            <img class="media-item__icon" src="/assets/icon/spoon_and_fork.svg" alt="">
+                            <h3 class="media-item__title">A single source of truth</h3>
+                        </div>
+                        <p class="media-item__description">
+                            When you add work to your Slate calendar we automatically calculate useful insights
+                        </p>
+                    </li>
+                    <li class="media-item">
+                        <div class="media-item__header">
+                            <img class="media-item__icon" src="/assets/icon/alien.svg" alt="">
+                            <h3 class="media-item__title">Intuitive interface</h3>
+                        </div>
+                        <p class="media-item__description">
+                            When you add work to your Slate calendar we automatically calculate useful insights
+                        </p>
+                    </li>
+                    <li class="media-item">
+                        <div class="media-item__header">
+                            <img class="media-item__icon" src="/assets/icon/infinite.svg" alt="">
+                            <h3 class="media-item__title">Or with rules</h3>
+                        </div>
+                        <p class="media-item__description">
+                            When you add work to your Slate calendar we automatically calculate useful insights
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contents Block -->
+    <section class="block contents-block">
+        <h2 class="block__title">Contents</h2>
+        <p class="block__description">
+            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+        </p>
+        <div class="grid grid--c2">
+            <div class="card">
+                <h3 class="card__title">Work</h3>
+                <p class="card__description">
+                    Ever wondered if you're too reliant on a client for work? Slate helps you identify.
+                </p>
+                <a href="#" class="btn btn--primary">Sign Up</a>
+                <img class="card__image" src="/assets/images/macbook_pro_768w.png"
+                    srcset="/assets/images/macbook_pro_320w.png 320w, /assets/images/macbook_pro_768w.png 532w, /assets/images/macbook_pro_1064w.png 1064w"
+                    alt="Macbook Pro">
+            </div>
+
+            <div class="card">
+                <h3 class="card__title">Design with real data</h3>
+                <p class="card__description">
+                    Ever wondered if you're too reliant on a client for work? Slate helps you identify .
+                </p>
+                <a href="#" class="btn btn--primary">Sign Up</a>
+                <img class="card__image" src="/assets/images/boards_notifications_532w.png"
+                    srcset="/assets/images/boards_notifications_266w.png 266w, /assets/images/boards_notifications_532w.png 532w, /assets/images/boards_notifications_1064w.png 1064w"
+                    alt="Notifications Board">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Block -->
+    <section class="block gallery-block">
+        <h2 class="block__title">Gallery</h2>
+        <p class="block__description">
+            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+        </p>
+        <ul class="list row row--wrap row--jcc gallery-block__list">
+            <li class="list__item">
+                <img src="/assets/images/canon_camera_640w.jpg" alt="Canon Camera">
+            </li>
+            <li class="list__item">
+                <img src="/assets/images/black_ipad_beside_green_iphone_5c_640w.jpg"
+                    alt="Black Ipad Beside Green Iphone 5c">
+            </li>
+            <li class="list__item">
+                <img src="/assets/images/closeup_photo_of_dslr_camera_640w.jpg" alt="Closeup Photo of Dslr Camera">
+            </li>
+            <li class="list__item">
+                <img src="/assets/images/gray_laptop_640w.jpg" alt="Gray Laptop">
+            </li>
+            <li class="list__item">
+                <img src="/assets/images/women_using_laptop_640w.jpg" alt="Women Using Laptop">
+            </li>
+            <li class="list__item">
+                <img src="/assets/images/silver_imac_640w.jpg" alt="Silver Imac">
+            </li>
+            <li class="list__item">
+                <img src="/assets/images/silver_laptop_and_white_cup_on_table_640w.jpg"
+                    alt="Silver laptop and white cup on table">
+            </li>
+            <!-- To Fix Aspect Ratio Of Images At Last Line -->
+            <li class="list__item"></li>
+        </ul>
+        <a href="#" class="btn btn--outline">See more</a>
+    </section>
+
+    <!-- Partners Block -->
+    <section class="block partners-block">
+        <h2 class="block__title">Partners</h2>
+        <p class="block__description">
+            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+        </p>
+        <ul class="list partners-block__list">
+            <li class="list__item">
+                <a href="#">
+                    <img src="/assets/icon/apple_app_store.svg" alt="Apple App Store">
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="#">
+                    <img src="/assets/icon/apiary.svg" alt="Apiary">
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="#">
+                    <img src="/assets/icon/android.svg" alt="Android">
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="#">
+                    <img src="/assets/icon/basecamp.svg" alt="Basecamp">
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="#">
+                    <img src="/assets/icon/airbnb.svg" alt="Airbnb">
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="#">
+                    <img src="/assets/icon/ibm.svg" alt="IBM">
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="btn btn--outline">All Partners</a>
+    </section>
+
+    <!-- Testimonials Block -->
+    <section class="block testimonials-block">
+        <h2 class="block__title">Testimonials</h2>
+        <ul class="list grid grid--c2 testimonials-block__list">
+            <li class="list__item testimonial">
+                <div class="testimonial__header">
+                    <a href="#" class="testimonial__user-avatar">
+                        <img class="testimonial__user-img" src="/assets/images/team_member_1.png" alt="">
+                    </a>
+                    <div class="testimonial__user">
+                        <a href="#">
+                            <h3 class="testimonial__user-name">Ralph Fisher</h3>
+                        </a>
+                        <p class="testimonial__user-job">Designer</p>
+                    </div>
+                </div>
+                <div class="testimonial__body">
+                    <p class="testimonial__text">
+                        Slate helps you see how many more days you need to work to reach your financial goal for the
+                        month and year. Slate helps you see how many more days you need to work to reach your financial
+                        goal for the month and year.
+                    </p>
+                </div>
+            </li>
+            <li class="list__item testimonial">
+                <div class="testimonial__header">
+                    <a href="#" class="testimonial__user-avatar">
+                        <img class="testimonial__user-img" src="/assets/images/team_member_4.png" alt="">
+                    </a>
+                    <div class="testimonial__user">
+                        <a href="#">
+                            <h3 class="testimonial__user-name">Jorge Murphyr</h3>
+                        </a>
+                        <p class="testimonial__user-job">Designer</p>
+                    </div>
+                </div>
+                <div class="testimonial__body">
+                    <p class="testimonial__text">
+                        Slate helps you see how many more days you need to work to reach your financial goal for the
+                        month and year. Slate helps you see how many more days you need to work to reach your financial
+                        goal for the month and year.
+                    </p>
+                </div>
+            </li>
+            <li class="list__item testimonial">
+                <div class="testimonial__header">
+                    <a href="#" class="testimonial__user-avatar">
+                        <img class="testimonial__user-img" src="/assets/images/team_member_3.png" alt="">
+                    </a>
+                    <div class="testimonial__user">
+                        <a href="#">
+                            <h3 class="testimonial__user-name">Francisco Lane</h3>
+                        </a>
+                        <p class="testimonial__user-job">Designer</p>
+                    </div>
+                </div>
+                <div class="testimonial__body">
+                    <p class="testimonial__text">
+                        Slate helps you see how many more days you need to work to reach your financial goal for the
+                        month and year. Slate helps you see how many more days you need to work to reach your financial
+                        goal for the month and year.
+                    </p>
+                </div>
+            </li>
+            <li class="list__item testimonial">
+                <div class="testimonial__header">
+                    <a href="#" class="testimonial__user-avatar">
+                        <img class="testimonial__user-img" src="/assets/images/team_member_2.jpg" alt="">
+                    </a>
+                    <div class="testimonial__user">
+                        <a href="#">
+                            <h3 class="testimonial__user-name">Claire Bell</h3>
+                        </a>
+                        <p class="testimonial__user-job">Designer</p>
+                    </div>
+                </div>
+                <div class="testimonial__body">
+                    <p class="testimonial__text">
+                        Slate helps you see how many more days you need to work to reach your financial goal for the
+                        month and year. Slate helps you see how many more days you need to work to reach your financial
+                        goal for the month and year.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- CTA Block -->
+    <section class="block cta-block">
+        <div class="grid grid--c2">
+            <div class="cta-block__content">
+                <h3 class="block__title">OpenType features and Variable fonts</h3>
+                <a href="#" class="btn btn--primary">Try For Free</a>
+            </div>
+            <img class="cta-block__image" src="/assets/images/cta_image_320w.png 320w"
+                srcset="/assets/images/cta_image_320w.png 320w, /assets/images/cta_image_768w.png 768w" alt="">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="grid grid--c2 app-footer__content">
+            <nav class="app-footer__nav grid grid--c3">
+                <div class="column nav-column">
+                    <h3 class="nav-column__title">Fingertipe</h3>
+                    <ul class="list nav-list">
+                        <li class="list__item nav-item"><a href="#">Home</a></li>
+                        <li class="list__item nav-item"><a href="#">Examples</a></li>
+                        <li class="list__item nav-item"><a href="#">Pricing</a></li>
+                        <li class="list__item nav-item"><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="column nav-column">
+                    <h3 class="nav-column__title">Resources</h3>
+                    <ul class="list nav-list">
+                        <li class="list__item nav-item"><a href="#">Home</a></li>
+                        <li class="list__item nav-item"><a href="#">Examples</a></li>
+                        <li class="list__item nav-item"><a href="#">Pricing</a></li>
+                        <li class="list__item nav-item"><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="column nav-column">
+                    <h3 class="nav-column__title">About</h3>
+                    <ul class="list nav-list">
+                        <li class="list__item nav-item"><a href="#">Home</a></li>
+                        <li class="list__item nav-item"><a href="#">Examples</a></li>
+                        <li class="list__item nav-item"><a href="#">Pricing</a></li>
+                        <li class="list__item nav-item"><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="app-footer__contact-info">
+                <ul class="list">
+                    <li class="list__item">
+                        <img class="icon" src="/assets/icon/map.svg" alt="">
+                        <span>7480 Mockingbird Hill undefined</span>
+                    </li>
+                    <li class="list__item">
+                        <img class="icon" src="/assets/icon/phone.svg" alt="">
+                        <span>(239) 555-0108</span>
+                    </li>
+                    <li class="list__item">
+                        <div class="social-media-contact-info">
+                            <a class="link" href="#">
+                                <img class="icon" src="/assets/icon/twitter.svg" alt="">
+                            </a>
+                            <a class="link" href="#">
+                                <img class="icon" src="/assets/icon/facebook.svg" alt="">
+                            </a>
+                            <a class="link" href="#">
+                                <img class="icon" src="/assets/icon/linkedin.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/index.js"></script>
 </body>
 
