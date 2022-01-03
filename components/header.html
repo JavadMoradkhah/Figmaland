@@ -1,7 +1,7 @@
 <header id="app-header" class="app-header">
     <div class="app-header__content">
         <a class="app-header__logo" href="/">
-            <img class="app-header__logo-img" src="assets/logo/logo.svg" alt="">
+            <img class="app-header__logo-img" src="/assets/logo/logo.svg" alt="Figmaland Logo">
         </a>
         <nav id="navigation-menu" class="nav">
             <ul class="list list--inline nav__list">
@@ -12,6 +12,8 @@
             </ul>
         </nav>
         <a href="#" class="btn btn--outline login-btn">Login</a>
-        <img id="nav-toggler" class="nav-toggler" src="assets/icon/menu.svg" alt="">
+        <svg id="nav-toggler" class="nav-toggler">
+            <use href="/assets/icon/icon-sprite.svg#menu"></use>
+        </svg>
     </div>
 </header>

@@ -5,13 +5,18 @@
         freelancers who want a simple way to plan their schedule.
     </p>
     <div class="grid grid--c2">
-        <img class="features-block__image" src="/assets/images/features_631w.png"
-            srcset="/assets/images/features_315w.png 315w, /assets/images/features_631w.png 631w" alt="">
+        <picture>
+            <source type="image/png"
+                srcset="/assets/images/features_315w.png 315w, /assets/images/features_631w.png 631w">
+            <img class="features-block__image" src="/assets/images/features_631w.png" loading="lazy" alt="">
+        </picture>
         <div class="column">
             <ul class="list media-list">
                 <li class="media-item">
                     <div class="media-item__header">
-                        <img class="media-item__icon" src="/assets/icon/spoon_and_fork.svg" alt="">
+                        <svg class="media-item__icon">
+                            <use href="/assets/icon/icon-sprite.svg#spoon_and_fork"></use>
+                        </svg>
                         <h3 class="media-item__title">A single source of truth</h3>
                     </div>
                     <p class="media-item__description">
@@ -20,7 +25,9 @@
                 </li>
                 <li class="media-item">
                     <div class="media-item__header">
-                        <img class="media-item__icon" src="/assets/icon/alien.svg" alt="">
+                        <svg class="media-item__icon">
+                            <use href="/assets/icon/icon-sprite.svg#alien"></use>
+                        </svg>
                         <h3 class="media-item__title">Intuitive interface</h3>
                     </div>
                     <p class="media-item__description">
@@ -29,7 +36,9 @@
                 </li>
                 <li class="media-item">
                     <div class="media-item__header">
-                        <img class="media-item__icon" src="/assets/icon/infinite.svg" alt="">
+                        <svg class="media-item__icon">
+                            <use href="/assets/icon/icon-sprite.svg#infinite"></use>
+                        </svg>
                         <h3 class="media-item__title">Or with rules</h3>
                     </div>
                     <p class="media-item__description">

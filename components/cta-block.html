@@ -4,7 +4,12 @@
             <h3 class="block__title">OpenType features and Variable fonts</h3>
             <a href="#" class="btn btn--primary">Try For Free</a>
         </div>
-        <img class="cta-block__image" src="/assets/images/cta_image_320w.png 320w"
-            srcset="/assets/images/cta_image_320w.png 320w, /assets/images/cta_image_768w.png 768w" alt="">
+        <picture>
+            <source type="image/webp"
+                srcset="/assets/images/cta_image_320w.webp 320w, /assets/images/cta_image_768w.webp 768w">
+            <source type="image/png"
+                srcset="/assets/images/cta_image_320w.png 320w, /assets/images/cta_image_768w.png 768w">
+            <img class="cta-block__image" src="/assets/images/cta_image_320w.png" loading="lazy" alt="">
+        </picture>
     </div>
 </section>

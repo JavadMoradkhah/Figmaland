@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Figmaland - Lightning Fast Prototyping</title>
+    <meta name="description"
+        content="Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.">
+    <meta name="keywords" content="Figma, Prototye, Web Design, Prototyping, UI/UX Design">
+    <meta name="author" content="Javad Moradkhah">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/dist/normalize.css">
     <link rel="stylesheet" href="css/dist/index.css">
 </head>
@@ -20,7 +23,7 @@
     <header id="app-header" class="app-header">
         <div class="app-header__content">
             <a class="app-header__logo" href="/">
-                <img class="app-header__logo-img" src="assets/logo/logo.svg" alt="">
+                <img class="app-header__logo-img" src="/assets/logo/logo.svg" alt="Figmaland Logo">
             </a>
             <nav id="navigation-menu" class="nav">
                 <ul class="list list--inline nav__list">
@@ -31,7 +34,9 @@
                 </ul>
             </nav>
             <a href="#" class="btn btn--outline login-btn">Login</a>
-            <img id="nav-toggler" class="nav-toggler" src="assets/icon/menu.svg" alt="">
+            <svg id="nav-toggler" class="nav-toggler">
+                <use href="/assets/icon/icon-sprite.svg#menu"></use>
+            </svg>
         </div>
     </header>
 
@@ -50,7 +55,7 @@
             <picture>
                 <source type="image/png" srcset="/assets/images/screens_388w.png 388w,
                 /assets/images/screens_776w.png 776w, /assets/images/screens_1552w.png 1552w">
-                <img src="/assets/images/screens_776w.png" alt="">
+                <img src="/assets/images/screens_776w.png" loading="lazy" alt="">
             </picture>
         </div>
     </section>
@@ -63,13 +68,18 @@
             freelancers who want a simple way to plan their schedule.
         </p>
         <div class="grid grid--c2">
-            <img class="features-block__image" src="/assets/images/features_631w.png"
-                srcset="/assets/images/features_315w.png 315w, /assets/images/features_631w.png 631w" alt="">
+            <picture>
+                <source type="image/png"
+                    srcset="/assets/images/features_315w.png 315w, /assets/images/features_631w.png 631w">
+                <img class="features-block__image" src="/assets/images/features_631w.png" loading="lazy" alt="">
+            </picture>
             <div class="column">
                 <ul class="list media-list">
                     <li class="media-item">
                         <div class="media-item__header">
-                            <img class="media-item__icon" src="/assets/icon/spoon_and_fork.svg" alt="">
+                            <svg class="media-item__icon">
+                                <use href="/assets/icon/icon-sprite.svg#spoon_and_fork"></use>
+                            </svg>
                             <h3 class="media-item__title">A single source of truth</h3>
                         </div>
                         <p class="media-item__description">
@@ -78,7 +88,9 @@
                     </li>
                     <li class="media-item">
                         <div class="media-item__header">
-                            <img class="media-item__icon" src="/assets/icon/alien.svg" alt="">
+                            <svg class="media-item__icon">
+                                <use href="/assets/icon/icon-sprite.svg#alien"></use>
+                            </svg>
                             <h3 class="media-item__title">Intuitive interface</h3>
                         </div>
                         <p class="media-item__description">
@@ -87,7 +99,9 @@
                     </li>
                     <li class="media-item">
                         <div class="media-item__header">
-                            <img class="media-item__icon" src="/assets/icon/infinite.svg" alt="">
+                            <svg class="media-item__icon">
+                                <use href="/assets/icon/icon-sprite.svg#infinite"></use>
+                            </svg>
                             <h3 class="media-item__title">Or with rules</h3>
                         </div>
                         <p class="media-item__description">
@@ -112,20 +126,28 @@
                     Ever wondered if you're too reliant on a client for work? Slate helps you identify.
                 </p>
                 <a href="#" class="btn btn--primary">Sign Up</a>
-                <img class="card__image" src="/assets/images/macbook_pro_768w.png"
-                    srcset="/assets/images/macbook_pro_320w.png 320w, /assets/images/macbook_pro_768w.png 532w, /assets/images/macbook_pro_1064w.png 1064w"
-                    alt="Macbook Pro">
+                <picture>
+                    <source type="image/webp"
+                        srcset="/assets/images/macbook_pro_320w.webp 320w, /assets/images/macbook_pro_768w.webp 768w, /assets/images/macbook_pro_1064w.webp 1064w">
+                    <source type="image/png"
+                        srcset="/assets/images/macbook_pro_320w.png 320w, /assets/images/macbook_pro_768w.png 768w, /assets/images/macbook_pro_1064w.png 1064w">
+                    <img class="card__image" src="/assets/images/macbook_pro_768w.png" loading="lazy" alt="Macbook Pro">
+                </picture>
             </div>
-
             <div class="card">
                 <h3 class="card__title">Design with real data</h3>
                 <p class="card__description">
                     Ever wondered if you're too reliant on a client for work? Slate helps you identify .
                 </p>
                 <a href="#" class="btn btn--primary">Sign Up</a>
-                <img class="card__image" src="/assets/images/boards_notifications_532w.png"
-                    srcset="/assets/images/boards_notifications_266w.png 266w, /assets/images/boards_notifications_532w.png 532w, /assets/images/boards_notifications_1064w.png 1064w"
-                    alt="Notifications Board">
+                <picture>
+                    <source type="image/webp"
+                        srcset="/assets/images/boards_notifications_266w.webp 266w, /assets/images/boards_notifications_532w.webp 532w, /assets/images/boards_notifications_1064w.webp 1064w">
+                    <source type="image/png"
+                        srcset="/assets/images/boards_notifications_266w.png 266w, /assets/images/boards_notifications_532w.png 532w, /assets/images/boards_notifications_1064w.png 1064w">
+                    <img class="card__image" src="/assets/images/boards_notifications_532w.png" loading="lazy"
+                        alt="Notifications Board">
+                </picture>
             </div>
         </div>
     </section>
@@ -301,8 +323,13 @@
                 <h3 class="block__title">OpenType features and Variable fonts</h3>
                 <a href="#" class="btn btn--primary">Try For Free</a>
             </div>
-            <img class="cta-block__image" src="/assets/images/cta_image_320w.png 320w"
-                srcset="/assets/images/cta_image_320w.png 320w, /assets/images/cta_image_768w.png 768w" alt="">
+            <picture>
+                <source type="image/webp"
+                    srcset="/assets/images/cta_image_320w.webp 320w, /assets/images/cta_image_768w.webp 768w">
+                <source type="image/png"
+                    srcset="/assets/images/cta_image_320w.png 320w, /assets/images/cta_image_768w.png 768w">
+                <img class="cta-block__image" src="/assets/images/cta_image_320w.png" loading="lazy" alt="">
+            </picture>
         </div>
     </section>
 
@@ -341,23 +368,33 @@
             <div class="app-footer__contact-info">
                 <ul class="list">
                     <li class="list__item">
-                        <img class="icon" src="/assets/icon/map.svg" alt="">
+                        <svg class="icon">
+                            <use href="/assets/icon/icon-sprite.svg#map"></use>
+                        </svg>
                         <span>7480 Mockingbird Hill undefined</span>
                     </li>
                     <li class="list__item">
-                        <img class="icon" src="/assets/icon/phone.svg" alt="">
+                        <svg class="icon">
+                            <use href="/assets/icon/icon-sprite.svg#phone"></use>
+                        </svg>
                         <span>(239) 555-0108</span>
                     </li>
                     <li class="list__item">
                         <div class="social-media-contact-info">
                             <a class="link" href="#">
-                                <img class="icon" src="/assets/icon/twitter.svg" alt="">
+                                <svg class="icon">
+                                    <use href="/assets/icon/icon-sprite.svg#twitter"></use>
+                                </svg>
                             </a>
                             <a class="link" href="#">
-                                <img class="icon" src="/assets/icon/facebook.svg" alt="">
+                                <svg class="icon">
+                                    <use href="/assets/icon/icon-sprite.svg#facebook"></use>
+                                </svg>
                             </a>
                             <a class="link" href="#">
-                                <img class="icon" src="/assets/icon/linkedin.svg" alt="">
+                                <svg class="icon">
+                                    <use href="/assets/icon/icon-sprite.svg#linkedin"></use>
+                                </svg>
                             </a>
                         </div>
                     </li>
@@ -366,7 +403,7 @@
         </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
 </body>
 
 </html>

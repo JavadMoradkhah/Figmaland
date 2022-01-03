@@ -219,7 +219,7 @@ Media Queries
   }
 
   &__description {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8);
     margin: 2rem 0;
     text-align: center;
   }
@@ -327,6 +327,7 @@ Media Queries
 
   .login-btn {
     margin: 0 2rem 0 auto;
+    user-select: none;
   }
 
   @media screen and (min-width: 768px) {
@@ -403,7 +404,6 @@ Media Queries
 
   .btn:first-of-type {
     margin: 0;
-    margin-bottom: 2rem;
 
     @media screen and (min-width: 768px) {
       margin: 0;

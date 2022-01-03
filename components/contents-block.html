@@ -10,9 +10,13 @@
                 Ever wondered if you're too reliant on a client for work? Slate helps you identify.
             </p>
             <a href="#" class="btn btn--primary">Sign Up</a>
-            <img class="card__image" src="/assets/images/macbook_pro_768w.png"
-                srcset="/assets/images/macbook_pro_320w.png 320w, /assets/images/macbook_pro_768w.png 532w, /assets/images/macbook_pro_1064w.png 1064w"
-                alt="Macbook Pro">
+            <picture>
+                <source type="image/webp"
+                    srcset="/assets/images/macbook_pro_320w.webp 320w, /assets/images/macbook_pro_768w.webp 768w, /assets/images/macbook_pro_1064w.webp 1064w">
+                <source type="image/png"
+                    srcset="/assets/images/macbook_pro_320w.png 320w, /assets/images/macbook_pro_768w.png 768w, /assets/images/macbook_pro_1064w.png 1064w">
+                <img class="card__image" src="/assets/images/macbook_pro_768w.png" loading="lazy" alt="Macbook Pro">
+            </picture>
         </div>
 
         <div class="card">
@@ -21,9 +25,14 @@
                 Ever wondered if you're too reliant on a client for work? Slate helps you identify .
             </p>
             <a href="#" class="btn btn--primary">Sign Up</a>
-            <img class="card__image" src="/assets/images/boards_notifications_532w.png"
-                srcset="/assets/images/boards_notifications_266w.png 266w, /assets/images/boards_notifications_532w.png 532w, /assets/images/boards_notifications_1064w.png 1064w"
-                alt="Notifications Board">
+            <picture>
+                <source type="image/webp"
+                    srcset="/assets/images/boards_notifications_266w.webp 266w, /assets/images/boards_notifications_532w.webp 532w, /assets/images/boards_notifications_1064w.webp 1064w">
+                <source type="image/png"
+                    srcset="/assets/images/boards_notifications_266w.png 266w, /assets/images/boards_notifications_532w.png 532w, /assets/images/boards_notifications_1064w.png 1064w">
+                <img class="card__image" src="/assets/images/boards_notifications_532w.png" loading="lazy"
+                    alt="Notifications Board">
+            </picture>
         </div>
     </div>
 </section>
