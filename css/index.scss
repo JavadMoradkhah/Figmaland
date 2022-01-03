@@ -1,13 +1,5 @@
 @import "layout";
 
-/* 
-Media Queries
-@media screen and (min-width: 768px) {
-}
-@media screen and (min-width: 1024px) {
-}
-*/
-
 /* Blocks */
 .block {
   width: 100%;
@@ -158,36 +150,14 @@ Media Queries
     flex-wrap: wrap;
   }
 
-  &--jc-sb {
-    justify-content: space-between;
-  }
-
-  &--jc-sa {
-    justify-content: space-around;
-  }
-
-  &--jc-se {
-    justify-content: space-evenly;
+  &--jcc {
+    justify-content: center;
   }
 }
 
 .column {
   display: flex;
   flex-direction: column;
-
-  &--jc-se {
-    justify-content: space-evenly;
-  }
-}
-
-.row--jcc,
-.column--jcc {
-  justify-content: center;
-}
-
-.row--aic,
-.column--aic {
-  align-items: center;
 }
 
 /* Lists */
