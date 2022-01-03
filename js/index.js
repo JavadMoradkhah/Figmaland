@@ -6,12 +6,10 @@ const navigationMenu = document.getElementById("navigation-menu");
 /* Navigation Menu Functions */
 function openNavigationMenu() {
   navigationMenu.classList.add("expanded");
-  navToggler.innerHTML = `<use href="/assets/icon/icon-sprite.svg#close"></use>`;
 }
 
 function closeNavigationMenu() {
   navigationMenu.classList.remove("expanded");
-  navToggler.innerHTML = `<use href="/assets/icon/icon-sprite.svg#menu"></use>`;
 }
 
 /* Window Events */
